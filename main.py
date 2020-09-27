@@ -6,7 +6,7 @@ from twitter import twitter_download
 
 debug = False
 
-# Set your bot token in an environment variable called BOT_TOKEN
+# Set your bot token in an environment variable called VIDDOWNLOADBOT_TELEGRAM
 bot = telebot.TeleBot(os.environ['VIDDOWNLOADBOT_TELEGRAM'])
 
 # Get username, for debug purposes
@@ -28,7 +28,7 @@ def send_welcome(message):
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
     if ("twitter.com/" in message.text) and ("/status/" in message.text):
-        twitter_download(bot, message, debug)
+        twitter_download(bot, message, get_username(message), debug)
     else:
         bot.reply_to(message, "That's not a valid link!")
         if debug:
