@@ -7,7 +7,7 @@ from twitter import twitter_download
 debug = False
 
 # Set your bot token in an environment variable called VIDDOWNLOADBOT_TELEGRAM
-bot = telebot.TeleBot(os.environ['VIDDOWNLOADBOT_TELEGRAM'])
+bot = telebot.TeleBot(os.environ['5050150479:AAE3QJAgLW88isOmXbxfysK0sJFTgf0InDs'])
 
 # Get username, for debug purposes
 def get_username(message):
