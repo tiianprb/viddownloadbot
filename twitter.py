@@ -2,7 +2,7 @@ import tweepy
 import os
 import requests
 
-auth = tweepy.AppAuthHandler(os.environ['VIDDOWNLOADBOT_TWITTER_API'], os.environ['VIDDOWNLOADBOT_TWITTER_SECRET'])
+auth = tweepy.AppAuthHandler(os.environ['POF8gvf0G3jgso0OKRFolJvaP'], os.environ['SG5Ph3wYYArtTqsv17cJmw6Gb5PDCx1K1wtqjCJAsy3zy57g5l'])
 api = tweepy.API(auth)
 
 def twitter_download(bot, message, username, debug):
